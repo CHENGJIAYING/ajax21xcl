@@ -121,6 +121,7 @@ public class Ch03Controller {
 	public @ResponseBody LotteryBean getLottery	(
 		@RequestParam String type
 	    ){
+		
 		LotteryBean bean = null;
 		LotteryService service = new LotteryService(); // LotteryService負責程式的邏輯運算
 		if (type.equalsIgnoreCase("4")) {
